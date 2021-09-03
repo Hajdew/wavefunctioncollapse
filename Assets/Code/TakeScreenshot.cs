@@ -38,7 +38,7 @@ public class TakeScreenshot : MonoBehaviour {
         }
 		var filename = this.getFilename();
 		System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(filename));
-		ScreenCapture.CaptureScreenshot(filename);
+		// ScreenCapture.CaptureScreenshot(filename);  // DOESNT WORK IN 2020.3.17F1 Unity
         Debug.Log("Saved screenshot: " + filename);
         this.Counter++;
     }
