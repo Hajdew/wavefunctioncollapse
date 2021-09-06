@@ -105,7 +105,7 @@ public abstract class AbstractMap {
 						this.backtrackAmount *= 2;
 					}
 					if (this.backtrackAmount > 0) {
-						Debug.Log(this.History.Count + " Backtracking " + this.backtrackAmount + " steps...");
+						//Debug.Log(this.History.Count + " Backtracking " + this.backtrackAmount + " steps...");
 					}
 					this.Undo(this.backtrackAmount);
 				}

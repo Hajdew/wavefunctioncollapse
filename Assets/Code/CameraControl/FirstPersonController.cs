@@ -50,7 +50,7 @@ public class FirstPersonController : MonoBehaviour {
 		this.cameraTilt = Mathf.Clamp(this.cameraTilt - Input.GetAxis("Mouse Look Y") * this.MouseSensitivity - Input.GetAxis("Look Y") * this.LookSensitivity * Time.deltaTime, -90f, 90f);
 		this.cameraTransform.localRotation = Quaternion.AngleAxis(this.cameraTilt, Vector3.right);
 
-		if (touchesGround) {
+		if (touchesGround) { 	
 			this.timeInAir = 0;
 		} else {
 			this.timeInAir += Time.deltaTime;
