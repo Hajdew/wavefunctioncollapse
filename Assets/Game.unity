@@ -1321,11 +1321,11 @@ MonoBehaviour:
     m_UseReference: 0
     m_Action:
       m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: 
+      m_Type: 1
+      m_ExpectedControlType: Button
       m_Id: 6bf6c732-e011-46b1-acc5-b649a4ec5f10
       m_Processors: 
-      m_Interactions: 
+      m_Interactions: Press
       m_SingletonActionBindings: []
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
@@ -1405,14 +1405,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013620858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20ce72b0cd813c24dbf3e0953ce7d13a, type: 3}
+  m_Script: {fileID: 11500000, guid: d7f1270e47baee94abeb4ddcdb11bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 1
-  LookSensitivity: 200
-  MouseSensitivity: 3
   JumpStrength: 2
   CollisionLayers:
     serializedVersion: 2
@@ -1430,7 +1427,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 0.5
   m_Radius: 0.1
-  m_SlopeLimit: 60
+  m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
